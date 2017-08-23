@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:padding="2dp"
+    android:background="#a792a1"
+    tools:context="com.hackathon.cmos.www.voicemusicplayer.activity.MainActivity" >
+
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@+id/ivAlbum"
+        android:text="原来我不知道你是谁" />
+
+    <TextView
+        android:id="@+id/tvSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:singleLine="true"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="那英" />
+
+</RelativeLayout>

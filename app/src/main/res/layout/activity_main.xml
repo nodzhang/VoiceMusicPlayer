@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackathon.cmos.www.voicemusicplayer.activity.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/appbar"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_MusicList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_musiclist_selector"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="推荐列表"
+            android:textColor="@drawable/selector_tab"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_MusicFind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+
+            android:checked="true"
+            android:drawableTop="@drawable/btn_musicfind_selector"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="歌曲识别"
+            android:textColor="@drawable/selector_tab"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_MianPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_mainpage_selector"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="你说我猜"
+            android:textColor="@drawable/selector_tab"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_Mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_minepage_selector"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="我的"
+            android:textColor="@drawable/selector_tab"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomBar"
+        android:layout_below="@+id/radioGroup" />
+
+    <!--
+    <ListView
+        android:id="@+id/listView_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottomBar"
+        android:layout_below="@+id/radioGroup" />
+    -->
+    <LinearLayout
+        android:id="@+id/llBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/appbar_bottom"
+        android:padding="2dp">
+
+        <com.hackathon.cmos.www.voicemusicplayer.ui.CircleImageView
+            android:id="@+id/aciivityMain_ivCMPic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvCMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="歌曲名称"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView_MianActivity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/bottom_stop" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/bottom_bar_pic" />
+    </LinearLayout>
+
+</RelativeLayout>

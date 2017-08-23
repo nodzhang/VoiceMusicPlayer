@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hackathon.cmos.www.voicemusicplayer.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/linerlagyou_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/findmusic_backgroud_top">
+
+        <TextView
+            android:id="@+id/tv_musicfind_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/btn_musicfind_voice"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:id="@+id/musicfind_tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:text="  "/>
+
+        <Button
+            android:id="@+id/btn_musicfind_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_musicfind_speak"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/findmusic_backgroud_word"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linerlagyou_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/findmusic_listview_backgroud_bottom">
+
+        <ListView
+            android:id="@+id/musicfind_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackathon.cmos.www.voicemusicplayer.activity.PlaymusicActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlPlayMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4E2C51">
+
+        <ImageView
+            android:id="@+id/ivPMBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+             />
+
+        <TextView
+            android:id="@+id/tvPMTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="歌曲名称"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPMSinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPMTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="5dp"
+            android:text="歌手名称"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvPMAlbumBackGround"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/playMusic_ivPMAlbum"
+            android:layout_alignLeft="@+id/playMusic_ivPMAlbum"
+            android:layout_alignRight="@+id/playMusic_ivPMAlbum"
+            android:layout_alignTop="@+id/playMusic_ivPMAlbum"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="-10dp"
+            android:background="#44ffffff" />
+
+        <ImageView
+            android:id="@+id/playMusic_ivPMAlbum"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_below="@+id/tvPMSinger"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_music_pic" />
+
+        <TextView
+            android:id="@+id/tvPMLrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playMusic_ivPMAlbum"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="18dp"
+            android:background="#44111111"
+            android:text=""
+            android:textColor="#ffffff" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvPMLrc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tvPMCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar"
+            android:layout_below="@+id/seekBar"
+            android:text="00:00"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tvPMTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/seekBar"
+            android:layout_below="@+id/seekBar"
+            android:text="00:00"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPMCurrentTime"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tvPMTotalTime"
+            android:layout_below="@+id/tvPMCurrentTime"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivPMPre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_pre" />
+
+            <ImageView
+                android:id="@+id/ivPMStart"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/btn_pause" />
+
+            <ImageView
+                android:id="@+id/ivPMNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/btn_next" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
