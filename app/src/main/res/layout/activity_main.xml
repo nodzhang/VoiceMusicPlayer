@@ -20,6 +20,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
+            android:checked="true"
             android:drawableTop="@drawable/btn_musiclist_selector"
             android:gravity="center"
             android:paddingTop="8dp"
@@ -33,8 +34,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
-
-            android:checked="true"
             android:drawableTop="@drawable/btn_musicfind_selector"
             android:gravity="center"
             android:paddingTop="8dp"

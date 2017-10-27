@@ -98,7 +98,7 @@ public class MainActivity extends FragmentActivity {
         fragments.add(new MinePageFragment());
         PagerAdapter pagerAdapter = new MainPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setCurrentItem(1);
+        viewPager.setCurrentItem(0);
     }
 
     // 声明ViewPager的适配器类

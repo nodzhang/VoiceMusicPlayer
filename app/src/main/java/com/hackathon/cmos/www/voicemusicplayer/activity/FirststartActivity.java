@@ -34,7 +34,7 @@ public class FirststartActivity extends Activity {
                 startActivity(intent);
                 finish();
             }
-        }, 5000);
+        }, 3000);
 
         super.onResume();
     }
@@ -47,7 +47,7 @@ public class FirststartActivity extends Activity {
         webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);//设置允许js弹出alert对话框
 
         //load在线
-        webView.loadUrl("http://120.27.13.191/start/index.html");
+        //webView.loadUrl("http://120.27.13.191/start/index.html");
 
         webView.setWebViewClient(new WebViewClient(){
             @Override
