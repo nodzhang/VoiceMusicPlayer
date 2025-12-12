@@ -96,6 +96,7 @@ public class MainActivity extends FragmentActivity {
         fragments.add(new MusicFindFragment());
         fragments.add(new MainPageFragment());
         fragments.add(new MinePageFragment());
+        fragments.add(new MinePageFragment());
         PagerAdapter pagerAdapter = new MainPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         viewPager.setCurrentItem(0);
